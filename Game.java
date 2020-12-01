@@ -1225,8 +1225,8 @@ public class Game
                   int MinGun = 90;
                   int RandomAxe = rand.nextInt(30) + MinAxe;
                   int RandomAxeD = rand.nextInt(30) + MinGun;
-                  PlayerHealth -= RandomAxe;
-                  WizardHealth-=RandomAxeD*.8;
+                  PlayerHealth -= RandomAxe*.8;
+                  WizardHealth-=RandomAxeD;
                   System.out.println("You dealt " + RandomAxe + " damage to The Ice Wizard! Now Ice Wizard's health is at " + WizardHealth);
                   System.out.println("Now The Ice Wizard can attack you! He deals " + RandomAxe + " damage to you. But with your Picked Axes, you reduce the damage by 20%");
                   System.out.println("So now, with the damage reduction, he deals " + RandomAxe*.8 + " damage. Now your health is at " + PlayerHealth);
